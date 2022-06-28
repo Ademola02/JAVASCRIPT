@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+ <audio src="./audio/ringtone.mp3"></audio>
+ <audio src="./audio/ringtone.mp3" controls></audio>
+ 
+    
+    <script defer>
+
+        let {log}=console;
+        let card=[{name:'mtn',amount:200,pin:121},{name:'etislat',amount:100,pin:163},
+        {name:'glo',amount:100,pin:123},{name:'airtel',amount:200,pin:145}
+        ]
+       // let arr= [1,2,3,4,5,6,7,8,9,10]
+        // let obj={name:'teslim',age:10,school:'SQI',hobbies:['coding','sleeping']}
+    //     let human={name:"Teslim",age:10,eye:2,walk:
+    //     function(){
+    //         this.leg==2 ? log('Now walking') :log(`can't walk`)
+    //     }
+    //     ,leg:1,hobbies:['Coding','Eating','Sleeping']
+    // }
+
+    // human.nose=1
+    // human.name='Josh'
+    // log(human)
+
+    // card.forEach(element => {
+    //     log(element.name);
+    // });
+    // card.forEach(function(element,i){
+    //     log(i+1,element.name);
+    // });
+ 
+
+    // for (const element of arr) {
+    //     log(element)
+    // // }
+    // for (const key in object) {
+    //     if (Object.hasOwnProperty.call(object, key)) {
+    //         const element = object[key];
+            
+    //     }
+    // }
+
+// let newc=card.map(function(element){
+//    return element.name+'Card' 
+// })
+// log(newc)
+// let newc = []
+// card.forEach(function(element){
+//    if (element.amount==100){
+//      newc.push(element)
+//     log(newc) 
+//    } 
+    
+// });  
+
+// SET TIMEOUT
+// setTimeout(function(){
+//   log('adeasfgjhfdhsjdhfg')  
+// },5000)
+
+
+
+// SET INTERVAL
+// let count= 1
+// let time=setInterval(function(){
+//     log(count)
+//     if (count==10) {
+//       clearInterval(time)  
+//     }
+//     count++
+// }
+// ,1000)
+
+
+//    let count=1
+//  function counting() {
+//      setTimeout(function(){
+//          log(count)
+//          if (count!=10){
+//              counting()
+//          }
+//          count++
+//      },1000)
+//     }
+//     counting() 
+// for(let i=2; i > 0; i--){
+//     let mer =1 ==1 ?  "AM" : "PM";
+//      option = `<option value="${mer}">${mer}</option>`;
+//     time.innerHTML=option
+// }
+   let d=new Date()    
+   console.log('day:'+d.getDay())
+   console.log('month:'+d.getMonth())
+   console.log('hour:'+d.getHours())
+   console.log('minutes:'+d.getMinutes())
+   console.log('seconds:'+d.getSeconds())
+    let p=new Audio('tone.mp3')
+    function play(){
+        p.play()
+        p.pause()
+    }
+    
+    // typeof("hello");
+    console.log(typeof(true));
+
+    </script>
+</body>
+</html>

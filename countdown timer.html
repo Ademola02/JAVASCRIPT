@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./countdown timer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./countdown timer.js" defer></script>
+</head>
+<body>
+    <h1 class="text-center font-italic font-weight-bold text-primary">COUNTDOWN TIMER</h1> 
+    <div id="box"   >
+        <div class="text-primary">minutes<h6 id="min">05</h6></div>
+        <div class="dot"><h6>:</h6></div>
+        <div class="text-primary">second<h6 id="sec">00</h6></div>
+        
+    </div>
+    <div class="boyt">
+    <button class="btn btn-dark" id="startBtn">START</button>
+    <button class="btn btn-dark btn1" onclick="reset()">RESET</button>
+    <!-- <button class="btn btn-dark btn2" onclick="pause()">PAUSE</button> -->
+    </div>
+</body>
+</html>

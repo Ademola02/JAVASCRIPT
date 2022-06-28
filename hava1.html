@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <style>
+       #box{
+    width: 20%;
+    height: 50px;
+    margin: 20px;
+    border: 1px solid rgb(80, 77, 77);
+    border-radius: 6px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: start;
+    font-size: 29px;
+    /* background-color: rgb(135, 144, 160);     */
+}
+       #box1{
+    width: 20%;
+    height: 50px;
+    border: 1px solid rgb(80, 77, 77);
+    border-radius: 6px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: start;
+    font-size: 29px;
+}
+#mem{
+    font-size: medium;
+    width: 20%;
+    height: 60px;
+    background-color: brown;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 3px;
+}
+   </style>
+</head>
+<body>
+         <textarea id="box"></textarea>
+     <textarea id="box1"></textarea>
+     <button class="btn btn-sm bg-danger" onclick="push()">PUSH</button>
+ <h1 id="head"></h1>
+    <table class="table" >
+        <thead class="thead-dark">
+          <tr>
+            <th>S/N</th>
+            <th>Names</th>
+            <th>email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="display">
+        
+        </tbody>
+      </table>
+
+<script defer>
+    let numbas=[1,2,3,4,5,6,7,8,9,10,11,12]
+    let box=document.getElementById('box');
+    let display=document.getElementById('display');
+    let box1=document.getElementById('box1');
+    let head=document.getElementById('head'); 
+    let arrs=[{name:'ay',email:'ay@mail.com'},{name:'sola',email:'sola@mail.com'},{name:'Josh',email:'josh@mail.com'},
+    {name:'bjay',email:'bjay@mail.com'},
+    {name:'Ibrahim',email:'ibrahim@mail.com'}
+]  
+   
+function push(){
+    let obj={name:box.value,email:box1.value}
+    arrs.push(obj)
+    show()
+} 
+    function show(){
+        display.innerHTML = '';
+         for (let index = 0; index < arrs.length; index++) {
+        display.innerHTML+=`<tr>
+                         ${ `<td> ${index + 1} </td>`}
+                         ${ `<td>  ${arrs[index].name} </td>`} 
+                         ${ `<td>  ${arrs[index].email} </td>`} 
+                         ${ `<td>  <button class="btn text-white bg-dark"  onclick="del()" >delete</button> </td> `}
+                         </tr>`;
+    }
+    }
+function del(index){
+     arrs.splice(index,1)
+     show()
+}
+function del(i){
+     arrs.splice(i,1)
+     show()
+}
+     function find(){
+       for (let i=1; i <=12; i++){ 
+        box.innerHTML= ''
+           head.innerHTML+= `<p>${box.value} * ${i} = ${box.value*i} </p>` }
+           for (let index =1; index <=12; index++) {
+               head.innerHTML+=  `<p>${box1.value} * ${index} = ${box1.value*index} </p>`
+               
+           } }
+    // for (let index = 0; index < arrs.length; index++) {
+    //  head.innerHTML+=(arrs[index] + '<br>' )      
+    // }
+      
+
+     
+</script>
+</body>
+</html>

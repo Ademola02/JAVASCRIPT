@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body{
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            margin-top: 20%;
+            /* text-align: center !important; */
+        }
+        p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body class="bg-danger">
+    <div class="box">
+     <p class="typing font-weight-bold text-center text-white"></p>
+    </div>
+
+
+
+
+   <script>
+    typing=document.querySelector('.typing');
+
+  let  text=["Hi,My Name is Ibrahim",
+         "I'm a student of SQI",
+         "I am currently studying Software Engineering."];
+
+    let word = -1;
+    let index = 0;
+    let letter= '';
+
+
+    //   START TYPING
+    function type(){
+        clear = setInterval(() => {
+        word++
+        if(text[index].length==word){
+           clearInterval(clear)
+           word = -1;
+           clearType();
+           return clear;
+       } 
+       
+       typing.innerHTML += text[index][word] 
+       
+    },200);
+       
+    }
+type()
+
+//      CLEAR TEXT
+function clearType(){
+    clear = setInterval(() => {
+        if (typing.innerHTML.length==0){
+            clearInterval(clear);
+            index++
+            type()
+        }
+        else{
+            typing.innerHTML=typing.innerHTML.slice(typing.innerHTML,-1)
+        }
+    },100);
+}
+// setTimeout(type,100)
+//  type()   
+
+ 
+   </script>
+
+</body>
+</html>

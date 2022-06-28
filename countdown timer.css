@@ -1,0 +1,52 @@
+body{
+    margin: 10px;
+    background-color: rgb(97, 56, 26) !important;
+}
+#box{
+    width: 370px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-left: 340px;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px black;
+}
+#box div{
+    text-align: center;
+    font-size: 2px;  
+}
+.dot{
+    margin-top: 35px;
+}
+h6{
+    width: 100px;
+    text-align: center;
+    font-size:40px !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    box-shadow: 2px 2px 3px black;
+    color: rgb(255, 250, 250);
+    height: 50px;
+    margin: 4px;
+}
+.boyt{
+  
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: fit-content;
+}
+.btn{
+    margin: 4px;
+    box-shadow: 2px 2px 3px black;  
+}
+.btn1{ 
+    box-shadow: 2px 2px 3px black;  
+}
+.btn2{
+    box-shadow: 2px 2px 3px black;
+}

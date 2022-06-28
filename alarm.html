@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./alarm.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALARM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./alarm.js" defer></script>
+</head>
+<body>
+    
+    <div class="container mt-5">
+      <!-- TIME DISPLAY -->
+        <div id="boxs">
+        <div>hour<h5 id="hr">00</h5></div>
+        <div class="dot"><h5>:</h5></div>
+        <div>min<h5 id="min">00</h5 ></div>
+        <div class="dot"><h5>:</h5></div>
+        <div>sec<h5 id="sec">00</h5 ></div>
+        </div>
+        <!-- INPUT -->
+        
+        <input type="text"  id="inp">
+        <!-- TIME -->
+            <div class="box w-50 justify-center">
+                <select>
+                  <option value="Hour" selected disabled hidden>Hour</option>
+                </select>
+                <select>
+                    <option value="Minute" selected disabled hidden>Minute</option>
+                  </select>
+                  <select>
+                    <option value="AM/PM" selected disabled hidden>AM/PM</option>
+                  </select>     
+                </div>
+                <!-- ALARM -->
+           <div class="boyt mt-5">
+            <button class="btn btn-dark">Set Alarm</button>
+            </div>
+             
+    </div>
+           
+          
+
+
+
+    
+            <div id ="myAnimation"></div>
+            
+    
+</body>
+</html>

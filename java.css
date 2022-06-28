@@ -1,0 +1,254 @@
+.container{
+    background-color: rgb(220, 220, 228);
+    width: 400px;
+    margin: 10px;
+    margin-left: 100px;
+    border: 2px solid black; 
+    border-radius: 9px solid;
+}
+.box{
+    width: 700px;
+    height: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.bar{
+    border: 1px solid transparent;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin: 4px;
+    font-weight: lighter;
+}
+.bar:hover{
+    background-color: rgb(150, 148, 148);
+}
+.ba{
+font-size: 22px;
+}
+.ball{
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    border: 1px solid transparent;
+    height: 25px;
+    margin-left: 30px;
+    font-weight: lighter;
+}
+.ball:hover{
+    background-color: rgb(150, 148, 148);
+}
+#screenbox{
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgb(80, 77, 77);
+    border-radius: 6px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: end;
+    font-size: large;
+    background-color: rgb(135, 144, 160);
+    
+}
+#screen{
+    width: 100%;
+    font-size: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: black;
+    font-weight: bold;
+    height:40%;
+}
+#screen1{
+    width: 100%;
+    font-size: small;
+    color: rgb(31, 30, 29);
+    word-wrap: break-word;
+    font-weight: lighter;
+    height:60%;
+}
+.meme{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: medium;
+    font-weight: bold;
+    margin: 3px;
+}
+.mems{
+    background-color:transparent;
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    opacity: 0.4;
+}
+.mem{
+    font-size: medium;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 3px;
+    background-color: rgb(220, 220, 228);
+}
+.mem:hover{
+    background-color:rgb(190, 183, 183);
+}
+
+.fun{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: medium;
+    font-weight: bold;
+    background-color: white;
+    
+}
+
+.fun button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.fun button:hover{
+    background-color: grey;
+}
+.fun1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.fun1 button {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
+    height: 100%;
+}
+.fun1 button:hover{
+    background-color: grey;
+}
+.fun2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid transparent;
+    background-color: white;
+    
+}
+
+.fun2 button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
+}
+.fun2 button:hover{
+    background-color: grey;
+}
+.fun3{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid transparent;
+    background-color: white;
+    
+}
+
+.fun3 button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
+}
+.fun3 button:hover{
+    background-color: grey;
+}
+.fun4{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid transparent;
+    background-color: white;
+    
+}
+
+.fun4 button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
+}
+.fun4 button:hover{
+    background-color: grey;
+}
+.fun5{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid transparent;
+    background-color: white;
+    
+}
+
+.fun5 button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 2px;
+}
+.fun5 button:hover{
+    background-color: grey;
+}
+.funy{
+    width: 100px;
+    height: 60px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(163, 179, 207);
+
+}

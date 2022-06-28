@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java clw3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #box{
+     width: 20%;
+     height: 50px;
+     margin: 20px;
+     border: 1px solid rgb(80, 77, 77);
+     border-radius: 6px;
+     word-wrap: break-word;
+     word-break: break-all;
+     text-align: start;
+     font-size: 29px;
+ }
+        #box1{
+     width: 20%;
+     height: 50px;
+     border: 1px solid rgb(80, 77, 77);
+     border-radius: 6px;
+     word-wrap: break-word;
+     word-break: break-all;
+     text-align: start;
+     font-size: 29px;
+ }
+ #mem{
+     font-size: medium;
+     width: 20%;
+     height: 60px;
+     background-color: brown;
+     border: 1px solid;
+     border-radius: 5px;
+     font-weight: bold;
+     margin: 3px;
+ }
+ .chan{
+     width: 64px;
+     outline: none;
+     height: 45px;
+     border: 1px solid;
+     border-radius: 4px;
+ }
+ .pust{
+     width: 64px;
+     outline: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     height: 30px;
+     background-color: brown;
+     border: 1px solid;
+     border-radius: 4px;
+ }
+    </style>
+</head>
+<body>
+    
+    
+<h1 id="head"></h1>
+<textarea id="box"></textarea>
+<textarea id="box1"></textarea><div  class="btn pust" onclick="push()">PUSH</div>
+   <table class="table" >
+       <thead class="thead-dark">
+         <tr>
+           <th>S/N</th>
+           <th>Names</th>
+           <th>email</th>
+           <th>Action</th>
+         </tr>
+       </thead>
+       <tbody id="display">
+       
+       </tbody>
+     </table>
+
+<script defer>
+   let numbas=[1,2,3,4,5,6,7,8,9,10,11,12];
+   let box=document.getElementById('box');
+   let display=document.getElementById('display');
+   let box1=document.getElementById('box1');
+   let head=document.getElementById('head'); 
+   let arrs=[
+       {name:'Ay'},
+       {name:'Bjay'},
+       {name:'Josh'},
+    ]
+
+
+    init()
+function init(params){
+       display.innerHTML = '';
+        for (let index = 0; index < arrs.length; index++) {
+       display.innerHTML+=`<tr>
+                        ${ `<td>  ${arrs[index].name} </td>`}
+                        ${ `<td>  <button class="chan" onclick='change(${index})' >Change</button> </td> `}
+                        </tr>`;
+   }
+   } 
+   let btn=document.querySelectorAll('button');
+
+for (let index = 0; index < btn.length; index++) {
+ btn[index].style.backgroundColor='black' 
+ btn[index].style.color ='white';     
+}
+      function push(){
+       box= (box.value);
+       let box1Choose=Number(box1.value);
+       btn[box1Choose].style.backgroundColor=`${box}`  
+         
+} 
+  
+   
+//    let clickCount=0;
+//    function change(params){
+    //    clickCount++;
+    //    if (clickCount==1) {
+    //    btn[params].style.backgroundColor='red' 
+    //    btn[params].style.color ='black';
+    // }
+    // else if (clickCount==2) {
+    //    btn[params].style.backgroundColor='black'
+    //    btn[params].style.color='white';
+    //    clickCount=0;
+    // }
+//    }
+  
+// function find(){
+//        for (let i=1; i <=12; i++){ 
+//         box.innerHTML= ''
+//            head.innerHTML+= `<p>${box.value} * ${i} = ${box.value*i} </p>` }
+//            for (let index =0; index <=arrs.length; index++) {
+//                head.innerHTML+=  `<p>${box1.value} * ${index} = ${box1.value*index} </p>`
+               
+//            } }
+     
+
+    
+</script>
+</body>
+</html>
