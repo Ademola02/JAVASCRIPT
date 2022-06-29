@@ -54,19 +54,19 @@ function desc(){
 
 }
 
-let chan=document.querySelectorAll('button');
+let btn=document.querySelectorAll('button');
   function done(index) {   
      if (task[index].done) 
      {
-     console.log('ade')
+    //  console.log('ade')
       task[index].done=false;
     // btn[index].style.backgroundColor='green'
       localStorage.setItem('todos',JSON.stringify(task))
      } 
      else{
       task[index].done=true;
-      console.log('fdg')
-      chan[index].style.backgroundColor='bg-danger' 
+      // console.log('fdg')
+      btn[index].style.backgroundColor='bg-danger' 
       localStorage.setItem('todos',JSON.stringify(task))
      }
      desc()
@@ -80,6 +80,7 @@ let chan=document.querySelectorAll('button');
     desc()
    
   }
+  
 //   function change(params){
     //    
     //    if (clickCount==1) {
