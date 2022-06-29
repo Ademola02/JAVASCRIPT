@@ -3,6 +3,9 @@ let display = document.getElementById('display');
 let task = [];
 
 let ogg=JSON.parse(localStorage.getItem('todos'))
+task=ogg || []
+
+desc()
 function push() {
   
   let obj ={inp:inp.value,done:false}
@@ -44,22 +47,26 @@ function desc(){
                               <td>${index + 1}</td>
                               <td>${obj.inp}</td>
                               <td><i class="${obj.done? 'fa fa-check': ''}" id="done${index}"></i></td>
-                              <td><button class="btn text-white bg-warning" onclick="done(${index})">${obj.done?'UNDO':'DONE'}</button></td>
+                              <td><button class="btn text-white bg-success" onclick="done(${index})">${obj.done?'UNDO':'DONE'}</button></td>
                               <td><button class="btn text-white bg-danger" onclick="del(${index})">delete</button></td> 
                               </tr>`                       
  });
 
 }
- 
 
+let chan=document.querySelectorAll('button');
   function done(index) {   
      if (task[index].done) 
      {
+     console.log('ade')
       task[index].done=false;
+    // btn[index].style.backgroundColor='green'
       localStorage.setItem('todos',JSON.stringify(task))
      } 
      else{
       task[index].done=true;
+      console.log('fdg')
+      chan[index].style.backgroundColor='bg-danger' 
       localStorage.setItem('todos',JSON.stringify(task))
      }
      desc()
@@ -68,6 +75,7 @@ function desc(){
 
  function del(index){
     task.splice(index,1)
+    
     localStorage.setItem('todos',JSON.stringify(task))
     desc()
    
