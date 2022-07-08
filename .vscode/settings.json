@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "Airtel",
         "amartem",
         "arrs",
         "bcomplex",
@@ -8,8 +9,11 @@
         "Ibrahim",
         "nextday",
         "numbas",
+        "PRINTREF",
         "screenbox",
         "todos"
     ],
-    "cSpell.ignoreWords": []
+    "cSpell.ignoreWords": [
+        "Etisalat"
+    ]
 }

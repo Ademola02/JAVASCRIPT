@@ -10,11 +10,11 @@ function push() {
   
   let obj ={inp:inp.value,done:false}
     task.push(obj)
-    localStorage.setItem('todos',JSON.stringify(task) )
+   
     desc()
 }
 
-//  function desc(){
+//  function desc localStorage.setItem('todos',JSON.stringify(task) )(){
     
 //      let count= 1
 //      let time=setInterval(function(){
@@ -39,7 +39,7 @@ function push() {
 //                               </tr>`
 //                             }                    
 // },1000)}
-
+// localStorage.clear()
 function desc(){
     display.innerHTML = '';
     task.forEach(function(obj,index) {
@@ -58,7 +58,7 @@ let btn=document.querySelectorAll('button');
   function done(index) {   
      if (task[index].done) 
      {
-    //  console.log('ade')
+    //  console.log(task[index].done)
       task[index].done=false;
     // btn[index].style.backgroundColor='green'
       localStorage.setItem('todos',JSON.stringify(task))
